@@ -1,6 +1,6 @@
 # CS7319-Final-Project-Group-12-Brian-Ronald-Mendes_Sai-Sambhu-Prasad-Kalaga
 Compilation & Implementation Platform:
----------------
+
 Operating System: The Math Chatbot project can be developed and deployed on various operating systems, including Windows, macOS, and Linux.
 Programming Language: Python 3.x is the primary programming language used for the project.
 
