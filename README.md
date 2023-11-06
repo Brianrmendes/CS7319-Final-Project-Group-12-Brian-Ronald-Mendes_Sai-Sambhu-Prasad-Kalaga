@@ -85,7 +85,7 @@ Now, you should have both the Python and Node.js servers running, serving the we
 5. choose "Chatbot Mode first time. It will be waiting for connection..
 6. Now split the terminal and run the code again (Or your chose to run the code but the first execution should stay intact)
 7. This time choose peer mode. And you iwll be asked to enter the IP Address of your present internet connection
-8. Once entered, you are ready to chat with the chatbot to answer you your mathematical queries
+8. Once entered, you are ready to chat with the chatbot get answers for your mathematical queries
 
 **Difference between architectural designs**
 
