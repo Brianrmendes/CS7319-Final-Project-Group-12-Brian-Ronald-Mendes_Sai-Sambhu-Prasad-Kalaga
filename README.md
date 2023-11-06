@@ -36,3 +36,14 @@ pip install flask flask-socketio transformers sympy matplotlib
 
 Code Editor/IDE:
 Choose a code editor or integrated development environment (IDE) for coding. Options include Visual Studio Code, PyCharm, Sublime Text, or your preferred editor.
+
+Project Setup:
+
+Organize your project files, including code, HTML, CSS, and assets, within a project directory.
+Running the Application:
+
+To run your Flask application, execute the following command:
+flask run
+
+Deployment (Web Server):
+When ready to deploy the application, configure a web server such as Apache or Nginx. 
