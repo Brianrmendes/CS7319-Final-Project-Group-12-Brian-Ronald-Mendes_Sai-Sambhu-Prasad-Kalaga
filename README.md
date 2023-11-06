@@ -9,8 +9,11 @@ Python: You can download Python from the official website at python.org. Choose 
 How to Install and Configure:
 
 Python Installation:
+
 Download: Visit python.org and download the latest version of Python.
+
 Installation: Run the downloaded installer and follow the installation instructions.
+
 Virtual Environment (Optional but Recommended):
 
 Install virtualenv (if not already installed) using pip:
