@@ -78,3 +78,61 @@ HTML and JavaScript in the Browser:
 You don't need to compile HTML and JavaScript files explicitly. The HTML file (index.html) and JavaScript file (script.js) are served directly to the client's web browser.
 To view the chatbot application, open your web browser and navigate to http://localhost:3000 (or the appropriate URL for your Node.js server).
 Now, you should have both the Python and Node.js servers running, serving the web-based chatbot application to clients.
+
+**Difference between architectural designs**
+
+Client-Server Architecture:
+
+Design Overview: In the client-server architecture, the system is divided into two main components: clients and servers. Clients initiate requests for services, while servers process these requests and return results. This design creates a clear separation of concerns.
+
+Communication: Clients and servers communicate over a network, typically using protocols like HTTP, WebSocket, or custom communication protocols. The server listens for incoming requests and responds accordingly.
+
+Rationale: This architecture is suitable for systems where centralized control, scalability, reliability, and security are essential. It allows for efficient management of resources and security policies. Scalability is achieved by adding more servers as needed.
+
+Peer-to-Peer (P2P) Architecture:
+
+Design Overview: In a P2P architecture, there is no clear distinction between clients and servers. All nodes in the network can act both as consumers and providers of services. Each node can initiate requests or respond to requests from other nodes.
+
+Communication: Communication in a P2P system is decentralized, with nodes directly communicating with each other. There is no central server to process requests. Instead, nodes collaborate to provide services.
+
+Rationale: P2P architecture is suitable for applications where nodes have equal importance and can share resources. It is often used in file-sharing applications and decentralized networks. However, it can be challenging to manage security, data consistency, and centralized control in a P2P system.
+
+Rationale for Final Selection (Client-Server Architecture):
+
+The rationale for selecting the client-server architecture in the Math Chatbot project is as follows:
+
+Centralized Control: The client-server architecture allows for centralized control and management of resources, making it easier to enforce security policies, data consistency, and access control. This is crucial for our project, which deals with sensitive information, such as mathematical computations.
+
+Scalability: Client-server systems are typically more scalable. We can add more clients and servers to meet increasing demand, and servers can be specialized for specific tasks. This scalability is important as our project may experience varying workloads.
+
+Reliability: Servers in the client-server architecture can be designed for high availability and redundancy. In case one server goes down, another can take over, ensuring continuous service. This high reliability is essential for uninterrupted user interactions.
+
+Security: The client-server architecture allows for the implementation of robust security measures. Security protocols can be enforced on the server side, which is particularly important when handling user data and complex mathematical calculations.
+
+In summary, the client-server architecture aligns with the needs of our project, providing centralized control, scalability, reliability, and robust security, which are essential for a mathematical chatbot system handling sensitive information and serving users effectively.
+
+Comparison and Evaluation of Pros and Cons for Both Architectures:
+
+Client-Server Architecture Pros:
+
+Centralized Control,
+Scalability,
+Reliability,
+Security,
+
+P2P Architecture Pros:
+
+Decentralization
+Equal Node Importance
+Distributed Load
+Client-Server Architecture Cons:
+
+Central Point of Failure (Server)
+Maintenance Overhead
+Initial Setup Complexity
+P2P Architecture Cons:
+
+Security Challenges
+Data Consistency
+Limited Centralized Control
+
