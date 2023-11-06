@@ -13,7 +13,6 @@ Python Installation:
 Download: Visit python.org and download the latest version of Python.
 
 Installation: Run the downloaded installer and follow the installation instructions.
-----------------------------------------------------
 Virtual Environment (Optional but Recommended):
 
 Install virtualenv (if not already installed) using pip:
@@ -25,23 +24,22 @@ virtualenv venv
 Activate the virtual environment:
 On Windows:
 venv\Scripts\activate
----------------------------------------------------
 On macOS and Linux:
 bash
 source venv/bin/activate
------------------------------------------------------
+
 Dependencies and Packages:
 Install required packages using pip. For example:
 pip install flask flask-socketio plotly sympy matplotlib tkinter
------------------------------------------------------
+
 Code Editor/IDE:
 Choose a code editor or integrated development environment (IDE) for coding. Options include Visual Studio Code, PyCharm, Sublime Text, or your preferred editor.
-------------------------------------------------------------------------------------------------------------------
+
 Project Setup
 
 Organize your project files, including code, HTML, CSS, and assets, within a project directory.
 Running the Application:
---------------------------------------------------------------------------------------------------------------------
+
 **How to compile/Execute: (For "Selected" version of the project which is using client server architecture)**
 
 Python Server (server.py) Compilation and Execution:
@@ -78,7 +76,7 @@ HTML and JavaScript in the Browser:
 You don't need to compile HTML and JavaScript files explicitly. The HTML file (index.html) and JavaScript file (script.js) are served directly to the client's web browser.
 To view the chatbot application, open your web browser and navigate to http://localhost:3000 (or the appropriate URL for your Node.js server).
 Now, you should have both the Python and Node.js servers running, serving the web-based chatbot application to clients.
---------------------------------------------------------------------------------------------------------------------------------
+
 **Difference between architectural designs**
 
 Client-Server Architecture:
@@ -88,7 +86,7 @@ Design Overview: In the client-server architecture, the system is divided into t
 Communication: Clients and servers communicate over a network, typically using protocols like HTTP, WebSocket, or custom communication protocols. The server listens for incoming requests and responds accordingly.
 
 Rationale: This architecture is suitable for systems where centralized control, scalability, reliability, and security are essential. It allows for efficient management of resources and security policies. Scalability is achieved by adding more servers as needed.
------------------------------------------------------------------------------------------------------------------------------------
+
 Peer-to-Peer (P2P) Architecture:
 
 Design Overview: In a P2P architecture, there is no clear distinction between clients and servers. All nodes in the network can act both as consumers and providers of services. Each node can initiate requests or respond to requests from other nodes.
@@ -96,7 +94,7 @@ Design Overview: In a P2P architecture, there is no clear distinction between cl
 Communication: Communication in a P2P system is decentralized, with nodes directly communicating with each other. There is no central server to process requests. Instead, nodes collaborate to provide services.
 
 Rationale: P2P architecture is suitable for applications where nodes have equal importance and can share resources. It is often used in file-sharing applications and decentralized networks. However, it can be challenging to manage security, data consistency, and centralized control in a P2P system.
-------------------------------------------------------------------------------------------------------------------------------------
+
 Rationale for Final Selection (Client-Server Architecture):
 
 The rationale for selecting the client-server architecture in the Math Chatbot project is as follows:
@@ -110,7 +108,7 @@ Reliability: Servers in the client-server architecture can be designed for high 
 Security: The client-server architecture allows for the implementation of robust security measures. Security protocols can be enforced on the server side, which is particularly important when handling user data and complex mathematical calculations.
 
 In summary, the client-server architecture aligns with the needs of our project, providing centralized control, scalability, reliability, and robust security, which are essential for a mathematical chatbot system handling sensitive information and serving users effectively.
---------------------------------------------------------------------------------------------------------------------------------------
+
 Comparison and Evaluation of Pros and Cons for Both Architectures:
 
 Client-Server Architecture Pros:
@@ -125,7 +123,7 @@ P2P Architecture Pros:
 Decentralization,
 Equal Node Importance,
 Distributed Load
-------------
+
 Client-Server Architecture Cons:
 
 Central Point of Failure (Server),
@@ -137,4 +135,4 @@ P2P Architecture Cons:
 Security Challenges,
 Data Consistency,
 Limited Centralized Control.
--------------------------------------------------------------------------------------------------------------------------------------------
+
