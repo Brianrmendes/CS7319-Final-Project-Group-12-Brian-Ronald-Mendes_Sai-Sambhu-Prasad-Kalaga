@@ -42,8 +42,39 @@ Project Setup:
 Organize your project files, including code, HTML, CSS, and assets, within a project directory.
 Running the Application:
 
-To run your Flask application, execute the following command:
-flask run
+**How to compile/Execute:**
 
-Deployment (Web Server):
-When ready to deploy the application, configure a web server such as Apache or Nginx. 
+Python Server (server.py) Compilation and Execution:
+
+a. Ensure you have Python installed. If not, you can download it from Python's official website.
+
+b. Install the required Python libraries using pip:
+
+pip install flask sympy plotly
+
+c. Open a terminal or command prompt, navigate to the directory containing server.py, and execute it:
+
+python server.py
+
+This will start your Python server, which listens on a specified port (by default, port 5000).
+
+Node.js Server (server.js) Compilation and Execution:
+
+a. Ensure you have Node.js installed. You can download it from Node.js's official website.
+
+b. Navigate to the directory containing server.js and package.json.
+
+c. Install the required Node.js dependencies by running the following command:
+npm install
+
+d. Start the Node.js server:
+
+node server.js
+
+This will start your Node.js server, which listens on port 3000 by default.
+
+HTML and JavaScript in the Browser:
+
+You don't need to compile HTML and JavaScript files explicitly. The HTML file (index.html) and JavaScript file (script.js) are served directly to the client's web browser.
+To view the chatbot application, open your web browser and navigate to http://localhost:3000 (or the appropriate URL for your Node.js server).
+Now, you should have both the Python and Node.js servers running, serving the web-based chatbot application to clients.
