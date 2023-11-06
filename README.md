@@ -122,17 +122,18 @@ Security,
 
 P2P Architecture Pros:
 
-Decentralization
-Equal Node Importance
+Decentralization,
+Equal Node Importance,
 Distributed Load
+
 Client-Server Architecture Cons:
 
-Central Point of Failure (Server)
-Maintenance Overhead
+Central Point of Failure (Server),
+Maintenance Overhead,
 Initial Setup Complexity
+
 P2P Architecture Cons:
 
-Security Challenges
-Data Consistency
-Limited Centralized Control
-
+Security Challenges,
+Data Consistency,
+Limited Centralized Control.
