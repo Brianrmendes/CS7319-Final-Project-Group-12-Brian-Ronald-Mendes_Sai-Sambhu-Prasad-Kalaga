@@ -77,6 +77,16 @@ You don't need to compile HTML and JavaScript files explicitly. The HTML file (i
 To view the chatbot application, open your web browser and navigate to http://localhost:3000 (or the appropriate URL for your Node.js server).
 Now, you should have both the Python and Node.js servers running, serving the web-based chatbot application to clients.
 
+**How to complie and execute P2P version:**
+1. Install python (Latest version: Optional)
+2. Make sure you installed the following packages: TKinter, socket, threading, and sympy
+3. Run the .py file
+4. You will be asked to select the mode
+5. choose "Chatbot Mode first time. It will be waiting for connection..
+6. Now split the terminal and run the code again (Or your chose to run the code but the first execution should stay intact)
+7. This time choose peer mode. And you iwll be asked to enter the IP Address of your present internet connection
+8. Once entered, you are ready to chat with the chatbot to answer you your mathematical queries
+
 **Difference between architectural designs**
 
 Client-Server Architecture:
