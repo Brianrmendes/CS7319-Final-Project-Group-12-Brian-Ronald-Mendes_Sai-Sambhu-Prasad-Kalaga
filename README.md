@@ -146,3 +146,31 @@ Security Challenges,
 Data Consistency,
 Limited Centralized Control.
 
+**Differences in the coding structures:**
+
+Client Server Architecture:
+Here we have used the following files:
+1. python_server.py
+2. server.js
+3. index.html
+4. style.css
+5. script.js
+
+How client-server architecture project works:
+1. First we run the python_server.py which contains information about to to process and respond to different types of queries
+2. Then we the server.js code to intitiate the project in the local host.
+3. The index.html, style.css and script.js are automatically execute (explicitly) which form the frontend and connect with the backend parts of the project.
+4. python_server.py, server.js and script.js are inter-connected using socket.io
+
+P2P Architecture:
+Here we have just one file: p2p.py
+
+How P2P Architecture project works:
+1. Here too we implement socket connection between two peers (chatbot and user)
+2. So this project is made using TKinter and has two main interfaces: Chatbot and Peer modes
+3. These both are connected using the the socket connection through IP Address
+4. The messages are sent from peer, the chatbot analyses and responds accordingly.
+5. Note: We can run multiple peer modes at a time but only a single a chatbot mode.
+
+
+
